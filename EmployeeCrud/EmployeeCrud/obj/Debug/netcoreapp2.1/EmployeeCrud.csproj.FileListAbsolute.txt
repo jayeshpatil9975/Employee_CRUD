@@ -1,0 +1,14 @@
+C:\Users\jayeshpat\source\repos\EmployeeCrud\EmployeeCrud\bin\Debug\netcoreapp2.1\EmployeeCrud.deps.json
+C:\Users\jayeshpat\source\repos\EmployeeCrud\EmployeeCrud\bin\Debug\netcoreapp2.1\EmployeeCrud.runtimeconfig.json
+C:\Users\jayeshpat\source\repos\EmployeeCrud\EmployeeCrud\bin\Debug\netcoreapp2.1\EmployeeCrud.runtimeconfig.dev.json
+C:\Users\jayeshpat\source\repos\EmployeeCrud\EmployeeCrud\bin\Debug\netcoreapp2.1\EmployeeCrud.dll
+C:\Users\jayeshpat\source\repos\EmployeeCrud\EmployeeCrud\obj\Debug\netcoreapp2.1\EmployeeCrud.csproj.CoreCompileInputs.cache
+C:\Users\jayeshpat\source\repos\EmployeeCrud\EmployeeCrud\obj\Debug\netcoreapp2.1\EmployeeCrud.RazorAssemblyInfo.cache
+C:\Users\jayeshpat\source\repos\EmployeeCrud\EmployeeCrud\obj\Debug\netcoreapp2.1\EmployeeCrud.RazorAssemblyInfo.cs
+C:\Users\jayeshpat\source\repos\EmployeeCrud\EmployeeCrud\obj\Debug\netcoreapp2.1\EmployeeCrud.AssemblyInfoInputs.cache
+C:\Users\jayeshpat\source\repos\EmployeeCrud\EmployeeCrud\obj\Debug\netcoreapp2.1\EmployeeCrud.AssemblyInfo.cs
+C:\Users\jayeshpat\source\repos\EmployeeCrud\EmployeeCrud\obj\Debug\netcoreapp2.1\EmployeeCrud.RazorTargetAssemblyInfo.cache
+C:\Users\jayeshpat\source\repos\EmployeeCrud\EmployeeCrud\bin\Debug\netcoreapp2.1\EmployeeCrud.pdb
+C:\Users\jayeshpat\source\repos\EmployeeCrud\EmployeeCrud\obj\Debug\netcoreapp2.1\EmployeeCrud.dll
+C:\Users\jayeshpat\source\repos\EmployeeCrud\EmployeeCrud\obj\Debug\netcoreapp2.1\EmployeeCrud.pdb
+C:\Users\jayeshpat\source\repos\EmployeeCrud\EmployeeCrud\obj\Debug\netcoreapp2.1\EmployeeCrud.csprojAssemblyReference.cache
