@@ -1,0 +1,65 @@
+<body>
+<div class="container">
+    <span class="toolbar"><mat-toolbar>Employee</mat-toolbar></span>
+</div>
+<div class="fillspace container"><button mat-raised-button class="fill" color="warn" (click)="onAdd()">Add Employee</button>
+  <mat-form-field class="search-form-field">
+    <input matInput placeholder="Search" [(ngModel)]="searchkey" (keyup)="applyFilter()">
+    <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="clearSearch()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+</div>
+<div class="container fill-remaining-spaces">
+<mat-table [dataSource]="employees" class="mat-elevation-z8" matSort>
+        
+    <ng-container matColumnDef="empId">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> EmpId </th>
+        <td mat-cell *matCellDef="let employee"> {{employee.empId}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+      <td mat-cell *matCellDef="let employee"> {{employee.name}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="email" >
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Email </th>
+      <td mat-cell *matCellDef="let employee"> {{employee.email}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="gender">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Gender </th>
+      <td mat-cell *matCellDef="let employee">{{employee.gender}}</td>
+    </ng-container>
+  
+    <ng-container matColumnDef="mobileNo">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> MobileNo </th>
+      <td mat-cell *matCellDef="let employee"> {{employee.mobileNo}} </td>
+    </ng-container>
+
+     <ng-container matColumnDef="dateOfJoining">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> DateOfJoining </th>
+        <td mat-cell *matCellDef="let employee"> {{employee.dateOfJoining|date:"dd-MM-yyyy"}} </td>
+      </ng-container> 
+
+    <ng-container matColumnDef="Actions">
+      <th mat-header-cell *matHeaderCellDef> Actions </th>
+      <td mat-cell *matCellDef="let employee"> 
+        <button mat-raised-button color="primary" (click)="onEdit(employee)" >Edit</button>
+        <!-- <app-editemployee [EmployeeId]='employee.empId' *ngIf="loadComponent"></app-editemployee> -->
+        <button mat-raised-button color="warn" (click)="onDelete(employee.empId,employee.name)">Delete</button>    
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+</mat-table>
+
+<mat-paginator (page)="pageLoad($event)" [length]="pageLength"
+  [pageSize]="pageSize"
+  [pageSizeOptions]="getPageSizeOptions()" showFirstLastButtons="false">
+</mat-paginator>
+</div >
+</body>
