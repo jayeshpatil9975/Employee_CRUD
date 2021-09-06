@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200205051504_initialmigration.cs" />
+    <Compile Remove="Migrations\20200205051504_initialmigration.Designer.cs" />
+    <Compile Remove="Migrations\20200205052201_initialmigration.cs" />
+    <Compile Remove="Migrations\20200205052201_initialmigration.Designer.cs" />
+    <Compile Remove="Migrations\20200205052656_initialmigration.cs" />
+    <Compile Remove="Migrations\20200205052656_initialmigration.Designer.cs" />
+    <Compile Remove="Migrations\20200205052950_initialmigration.cs" />
+    <Compile Remove="Migrations\20200205052950_initialmigration.Designer.cs" />
+    <Compile Remove="Migrations\20200205054216_initialmigration.cs" />
+    <Compile Remove="Migrations\20200205054216_initialmigration.Designer.cs" />
+    <Compile Remove="Migrations\20200205054523_initialmigration.cs" />
+    <Compile Remove="Migrations\20200205054523_initialmigration.Designer.cs" />
+    <Compile Remove="Migrations\20200206082731_intialmigration.cs" />
+    <Compile Remove="Migrations\20200206082731_intialmigration.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+  </ItemGroup>
+
+</Project>
